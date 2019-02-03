@@ -1,28 +1,52 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Hank Quinlan, Horrible Cop</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
-	</body>
-</html>
+---
+title: Jigna Patel - iOS Developer from Berlin, Germany | Portfolio
+description: Jigna is a freelance iOS developer based in Berlin, Germany. She builds interactive, user friendly iOS apps.
+layout: homepage
+---
+
+<div class="hero">
+    <div class="vlign-wrapper" >
+        <div class="vlign-cell">
+                    <div class="hero-content container">
+                        <h1>
+                        <span><span>Hi, I'm a Jigna, a freelance iOS developer </span></span><br>
+                        <span><span>based in Berlin, Germany. I enjoy building  </span></span><br>
+                       <span><span> user friendly mobile apps.</span></span><br>
+
+                       <span><span><p> Check out some of my selected work below. 👇</p> </span></span>
+                   </h1>
+                    </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="projects-list page-content">
+  <div class="container">
+
+   <div class="project-list-wrapper clearfix grid" data-grid>
+        {% assign sorted_pages = site.projects | sort:"order" %}
+        {% for project in sorted_pages %}
+        {% assign loopindex = forloop.index | modulo: 2 %}
+        <div class="grid-item" data-packed>
+            <a href="{{project.url}}">
+                <div class="project-image loading thumb-{{project.slug}} bg-{{project.slug}}">
+
+                    <img class="b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ site.baseurl }}/assets/images/{{project.thumb}}" alt="{{project.title}}">
+
+                </div>
+                <div class="project-info">
+                    <h4>{{project.projectName}}</h4>
+                    <p>
+                    {% for tag in project.tags %}
+                    <span>{{tag}}{% if forloop.last == false %},{% endif %}</span>
+                    {% endfor %}
+                    </p>
+                </div>
+            </a>
+        </div>
+       {% endfor %}
+    </div>
+    </div>
+</div>
