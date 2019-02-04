@@ -12,13 +12,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Devang Patel - Product Designer & Front End Developer
-email: pateldevang10@gmail.com
-description: I specialize in product design, product prototyping, and front end development. 
+title: Jigna Patel - iOS Developer
+email: jigna.punjabi@gmail.com
+description: -
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "/" # the base hostname & protocol for your site
-twitter_username: p_devang
-github_username:  patel-devang
+github_username:  pateljigna
 
 # Build settings
 markdown: kramdown
