@@ -138,8 +138,7 @@
 
 .thumb-italian-restaurant-app,
 .thumb-backsplash-app,
-.thumb-getirtaxi-app,
-.thumb-getirtaxi-chat{
+.thumb-getirtaxi-app {
     height: 700px;
     img {
         position: absolute;
@@ -149,6 +148,20 @@
         display: inline-block;
     }
 }
+
+.thumb-getirtaxi-chat{
+    height: 700px;
+    img {
+        position: absolute;
+        bottom: -50%;
+        width: 590px;
+        left: 50%;
+        display: inline-block;
+    }
+}
+
+
+
 
 .bg-ripple-bugs {
     background: #74d4cf;
