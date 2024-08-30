@@ -33,8 +33,15 @@ layout: homepage
             <a href="{{project.url}}">
                 <div class="project-image loading thumb-{{project.slug}} bg-{{project.slug}}">
 
-                    <img class="b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ site.baseurl }}/assets/images/{{project.thumb}}" alt="{{project.title}}">
-
+                     {% if project.slug == 'getir-campaign-tab' %}
+                        <video class="b-lazy" autoplay loop muted>
+                          <source data-src="{{ site.baseurl }}/assets/images/PromotionsTab.mov" type="video/mov" />
+                          Your browser does not support the video tag.
+                        </video>
+            
+                        {% endif %} {% if project.slug != 'getir-campaign-tab' %}
+                                            <img class="b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ site.baseurl }}/assets/images/{{project.thumb}}" alt="{{project.title}}">
+                        {% endif %}
                 </div>
                 <div class="project-info">
                     <h4>{{project.projectName}}</h4>
