@@ -68,7 +68,7 @@
 .grid-item,
 .col-2{
     width: 50%;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
     &:nth-child(odd) {
         padding-right: 20px;
     }
@@ -131,7 +131,7 @@
     background: #FFE890;
 }
 .bg-getir-campaign-tab {
-    background: #FFE890;
+    background: #d9d9d9;
 }
 
 
@@ -151,6 +151,15 @@
         left: 50%;
         display: inline-block;
     }
+}
+
+.bg-italian-restaurant-app video {
+    position: absolute;
+    top: 46%;
+    width: 361px;
+    left: 50%;
+    display: inline-block;
+    overflow: hidden;
 }
 
 .thumb-getirtaxi-chat{
