@@ -39,9 +39,8 @@ layout: homepage
                 <div class="project-info">
                     <h4>{{project.projectName}}</h4>
                     <p>
-                    {% for tag in project.tags %}
-                    <span>{{tag}}{% if forloop.last == false %},{% endif %}</span>
-                    {% endfor %}
+                      {{ project.intro-summary }}
+   
                     </p>
                 </div>
             </a>
