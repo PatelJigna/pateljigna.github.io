@@ -254,10 +254,10 @@
 .project-cover {
     img,
     video {
-        max-height: 140%;
+        max-height: 110%;
         position: absolute;
-        left: 50%;
-        top: 50%;
+        left: 43%;
+        top: 40%;
     }
     &.loading {
         background-image: url('../assets/images/loading.svg');
