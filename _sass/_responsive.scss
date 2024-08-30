@@ -1,6 +1,12 @@
 @media (max-width: 1700px) {
   .container {
     width: 100%;
+    padding-left:50px;
+    padding-right:50px;
+  }
+   .container.image-content {
+    padding-left:0px;
+    padding-right:0px;
   }
 }
 @media (max-width: 1500px) {}
