@@ -81,6 +81,7 @@
     width: 100%;
     overflow: hidden;
     margin-bottom: 10px;
+    border-radius:24px;
     position: relative;
     &.loading {
         background-image: url('../assets/images/loading.svg');
@@ -143,11 +144,11 @@
 .thumb-backsplash-app,
 .thumb-getirtaxi-app,
 .thumb-getir-campaign-tab {
-    height: 700px;
+    height: 520px;
     img {
         position: absolute;
         top: 50%;
-        width: 390px;
+        width: 310px;
         left: 50%;
         display: inline-block;
     }
@@ -163,7 +164,7 @@
 }
 
 .thumb-getirtaxi-chat{
-    height: 700px;
+    height: 448px;
     img {
         position: absolute;
         bottom: -50%;
