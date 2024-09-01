@@ -7,7 +7,6 @@ h6 {
     font-weight: 800;
     font-family: inherit;
     color: $color_headings;
-    letter-spacing: 1px;
     margin:0;
     padding:0;
 
@@ -22,13 +21,14 @@ h2 {
 }
 
 h3 {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 800;
 }
 
 h4 {
     font-size: 30px;
     font-weight: 800;
+    margin-bottom:8px;
 }
 
 h5 {
@@ -56,12 +56,11 @@ p, li {
     font-size: 24px;
     line-height: 34px;
     color: $color_paragraph;
-    letter-spacing: 0.4px;
 }
 
 p.intro {
-  font-size: 36px;
-  line-height: 46px;
+    font-size: 30px;
+    line-height: 46px;
 }
 
 p {
