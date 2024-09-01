@@ -107,17 +107,17 @@
 
 .project-info {
     width: 100%;
+    padding: 8px;
     h4 {
         font-size: 22px;
-        letter-spacing: 1px;
         font-weight: 800;
+        margin-bottom:4px;
     }
     p {
         color: $color_paragraph;
         font-size: 18px;
         line-height: 28px;
         margin-top: 0;
-        letter-spacing: 1px;
     }
 }
 
@@ -164,11 +164,11 @@
 }
 
 .thumb-getirtaxi-chat{
-    height: 448px;
+    height: 520px;
     img {
         position: absolute;
         bottom: -50%;
-        width: 590px;
+        width: 449px;
         left: 50%;
         display: inline-block;
     }
